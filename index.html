@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        #proposal {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="proposal"></div>
+
+    <script>
+        let proposalMessage = [
+            "Roses are red,",
+            "Violets are blue,",
+            "My love for you is true.",
+            "From morning till night,",
+            "I think of you,",
+            "And all the wonderful things we can do.",
+            "So here's my question,",
+            "Just for you,",
+            "Will you be my forever too?"
+        ];
+
+        let proposalDiv = document.getElementById('proposal');
+        proposalMessage.forEach(line => {
+            let p = document.createElement('p');
+            p.textContent = line;
+            proposalDiv.appendChild(p);
+        });
+
+        let finalLine = document.createElement('h2');
+        finalLine.textContent = "Will you be mine?";
+        proposalDiv.appendChild(finalLine);
+    </script>
+</body>
+</html>
